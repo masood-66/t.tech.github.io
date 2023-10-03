@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./courses detail/reg.css">
+  <link rel="stylesheet" href="main.css">
 
   <link
   rel="stylesheet"
@@ -47,8 +48,7 @@
     <div class="container d-flex align-items-center">
 
 
-
-
+     
 
 
 
@@ -56,57 +56,68 @@
       <!-- <h1 class="logo me-auto"><a href="index.html">MPS</a></h1> -->
       <a href="index.html" class="logo me-auto"><img title="t tech" src="./img/t.tech.png" alt="" class="img-fluid"></a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar navbar-expand-lg">
+        <!-- <div class="collapse navbar-collapse"> -->
         <ul>
           <li><a class="nav-link scrollto active" href="./hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <!-- <li><a class="nav-link   scrollto" href="#portfolio">Events</a></li> -->
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="./courses detail/web.html">Web Development</a></li>
-              <li class="dropdown"><a href="./courses detail/e-commerce.html"><span>E-Commerce</span></a>
-                <!-- <ul>
-                  <li><a href="#">Amazon VA</a></li>
-                  <li><a href="#">Ebay</a></li>
-                  <li><a href="#">Shopfy</a></li>
-                  <li><a href="#">WallMart</a></li>
-                  <li><a href="#">Etsy</a></li>
-                </ul> -->
-              </li>
+              <li><a href="./courses detail/e-commerce.html">E-Commerce</a></li>
+             
               <li><a href="./courses detail/graphic.html">Graphic Design</a></li>
               <li><a href="./courses detail/digital markiting.html">Digital Markiting</a></li>
               <li><a href="./courses detail/ui&ux.html">UI&Ux</a></li>
               <li><a href="./courses detail/accounting.html">Accounting & Book Keeping</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          <div class="d-flex justify-content-center justify-content-lg-start btn-shedule">
+            <a  href="./courses detail/booknow.html" class="btn-get-started text-warning scrollto">Shedule an Appointment</a>
+       
+          </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+      <!-- </div> -->
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+<
+  <section id="hero" class="d-flex align-items-center bg-stars ">
 
-    <div class="container">
+    <video width="100%"  id="myVideo" loop autoplay>
+      <source src="./img/VID-20231002-WA0005.mp4" type="video/mp4">
+    </video>
+
+
+
+    <div class="container content">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
           data-aos="fade-up" data-aos-delay="200">
           <h1>t.Tech (Pvt) Ltd.</h1>
-          <h2>Empowvering Freelancers, Empowvering Business.</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#" class="btn-get-started scrollto">Shedule an Appointment</a>
-            <a href="https://youtube.com/shorts/MfFlE1tBAoI?feature=share" class="glightbox btn-watch-video"><i
+          <h2 class="text-white">Empowering Freelancers, Empowering Business.</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start btn-shedule">
+            <!-- <a href="./courses detail/booknow.html" class="btn-get-started scrollto">Shedule an Appointment</a> -->
+            <a disabled href="https://youtube.com/shorts/MfFlE1tBAoI?feature=share" class="glightbox btn-watch-video"><i
                 class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="./img/hero-img.png" class="img-fluid animated" alt="">
+          <!-- <img src="./img/hero-img.png" class="img-fluid animated" alt=""> -->
         </div>
       </div>
     </div>
@@ -117,10 +128,11 @@
   <!-- ======= About Us Section ======= -->
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
-
+      
       <div class="section-title">
-        <h2>Introduction</h2>
+        <h2>about us</h2>
       </div>
+      
 
       <div class="row content">
         <div class="col-lg-6">
@@ -131,40 +143,42 @@
           </p>
           <div class="accordion-list">
             <h6> <strong>Our Offerings:</strong></h6>
+            <h6> <strong>Accounting and Bookkeeping:</strong></h6>
             <p>
-            <h6> <strong>Accounting and Bookkeeping:</strong></h6> We provide meticulous and reliable accounting and
+             We provide meticulous and reliable accounting and
             bookkeeping services, ensuring your financial records are always in order, allowing you to focus on your
             core business.
 
             </p>
+            <h6> <strong>Ecommerce (Amazon VA):</strong></h6>
             <p>
-            <h6> <strong>Ecommerce (Amazon VA):</strong></h6>As virtual assistants specialized in Amazon, we help you
+            As virtual assistants specialized in Amazon, we help you
             navigate the world's largest online marketplace, optimizing your operations and boosting your online sales.
 
             </p>
+            <h6> <strong>Web Development:</strong></h6>
             <p>
-            <h6> <strong>Web Development:</strong></h6>Our expert web developers craft stunning and functional websites,
+            Our expert web developers craft stunning and functional websites,
             ensuring a strong online presence that captivates your audience and drives results.
             </p>
+            <h6><strong>Digital Marketing:</strong></h6>
             <p>
-            <h6><strong>Digital Marketing:</strong></h6>Harness the power of digital marketing with our comprehensive
+            Harness the power of digital marketing with our comprehensive
             strategies. From SEO to social media, we'll help you reach your target audience effectively.
             </p>
           </div>
 
-          <!-- <ul6
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-          </ul> -->
+         
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
+          <h6> <strong>UI/UX Design:</strong></h6>
           <p>
-          <h6> <strong>UI/UX Design:</strong></h6>User-centered and intuitive, our UI/UX designs enhance the digital
+          User-centered and intuitive, our UI/UX designs enhance the digital
           experiences of your audience, resulting in higher engagement and satisfaction.
           </p>
+          <h6> <strong>Graphic Design:</strong></h6> 
           <p>
-          <h6> <strong>Graphic Design:</strong></h6> Our creative graphic designers bring your brand to life with
+          Our creative graphic designers bring your brand to life with
           visually captivating designs that leave a lasting impression.
           </p>
           <h6> <strong>Why Choose t.Tech Pvt Ltd:</strong></h6>
@@ -173,21 +187,26 @@
           and convenience of remote services while maintaining a personal connection with our clients.
           </p>
 
+          <h6> <strong>Excellence in Training: </strong></h6>
           <p>
-          <h6> <strong>Excellence in Training: </strong></h6>Our training programs are designed to empower the next
-          generation of professionals in their chosen domains, offering hands-on learning and expertise.
+          Our training programs are designed to empower the next
+          generation of professionals in their chosen domains, offering hands-on learning and expertise.  </p>
+
           <div id="demo" class="collapse">
+            <h6> <strong>Passion for Innovation:</strong></h6>
             <p>
-            <h6> <strong>Passion for Innovation:</strong></h6>We embrace innovation and stay at the forefront of
+            We embrace innovation and stay at the forefront of
             industry trends to ensure your projects are not only executed flawlessly but also incorporate the latest
             advancements.
             </p>
+            <h6> <strong>Dedicated Freelancers:</strong></h6> 
             <p>
-            <h6> <strong>Dedicated Freelancers:</strong></h6> Our team of skilled and dedicated freelancers is committed
+            Our team of skilled and dedicated freelancers is committed
             to delivering high-quality results, tailored to your unique needs and aspirations.
             </p>
+            <h6> <strong>Customer-Centric Approach:</strong></h6>
             <p>
-            <h6> <strong>Customer-Centric Approach:</strong></h6>Your satisfaction is our priority. We work closely with
+            Your satisfaction is our priority. We work closely with
             you to understand your goals and deliver solutions that exceed your expectations.
             </p>
             <p>At t.Tech Pvt Ltd, we believe in the power of collaboration, innovation, and expertise. Whether you're
@@ -195,7 +214,6 @@
               programs, we're here to make your journey towards excellence seamless and rewarding.
               Explore our website to discover how t.Tech Pvt Ltd can transform your freelance experience and empower
               your professional growth. Welcome to a world of endless possibilities and opportunities.</p>
-            </p>
             </div>
 
 
@@ -203,9 +221,56 @@
           <button  class="btn btn-outline-primary ui-btn " data-bs-toggle="collapse"
           data-bs-target="#demo"><span>Read More</span></button>
         </div>
-      </div>
+      </div><hr>
 
-    </div>
+      <div class="container">
+      
+          <h4 class="text-primary">Our Vision</h4> 
+          <p>Our vision is simple yet powerful: to be the go-to destination for businesses seeking unparalleled freelance support and for aspiring professionals looking to acquire world-class skills. We aim to bridge the gap between talent and opportunity, creating a thriving ecosystem where freelance excellence knows no boundaries.</p>  
+          
+             <h4 class="text-primary">Our Mission</h4>
+          <h6>Deliver Outstanding Freelance Services: </h6>
+          <p>We strive to provide businesses worldwide with access to the finest freelance talent across a range of essential domains, from accounting and bookkeeping to web development, digital marketing, graphic design, and UI/UX design.</p>
+         
+          <div id="demo1" class="collapse m-1">
+          <h6>Empower the Next Generation:  </h6>
+          <p>Through our training programs, we empower individuals with the knowledge and skills they need to excel in their chosen fields, nurturing the leaders of tomorrow.</p>
+            
+          <h6>Drive Innovation: </h6>
+          <p>Innovation is at the core of our identity. We embrace change, stay ahead of industry trends, and employ cutting-edge technologies to ensure our services and training are always at the forefront of excellence.</p>
+         
+          <h6>Prioritize Customer Success: </h6>
+          <p>Your success is our success. We take a customer-centric approach, working closely with you to understand your unique needs and objectives, and delivering tailored solutions that drive results.</p>
+         
+          <h6>Prioritize Customer Success: </h6>
+          <p>Your success is our success. We take a customer-centric approach, working closely with you to understand your unique needs and objectives, and delivering tailored solutions that drive results.</p>
+          
+          <!--   why -->
+          <h4 class="text-primary">Why t.Tech Pvt Ltd is Unique</h4>
+
+          <p>Global Reach, Local Touch: While our services span the globe, we maintain the personal touch of a local business. We connect with our clients on a personal level, understanding their unique challenges and goals.</p>
+
+          <h6>Freelancers Committed to Excellence: </h6>
+          <p>Our team of dedicated freelancers is not just skilled; they are passionate about what they do. They bring enthusiasm, creativity, and a relentless pursuit of excellence to every project.</p>
+
+          <h6>Continuous Learning Culture: </h6>
+          <p>We believe in the power of lifelong learning. Our training programs foster a culture of continuous growth and development, ensuring that our team and our clients remain ahead of the curve.</p>
+
+          <h6>Innovation as Standard: </h6>
+          <p>Innovation is not an option; it's our standard. We are continuously exploring new technologies and methodologies to deliver the best possible solutions to our clients.</p><br>
+
+          <p>At t.Tech Pvt Ltd, we are more than just a freelance company. We are a community of professionals, learners, and innovators committed to raising the bar in the freelance industry. Whether you're partnering with us for freelance services or embarking on a learning journey, you're joining a community that thrives on excellence, innovation, and collaboration.</p><br>
+        
+          <p>Discover how t.Tech Pvt Ltd can transform your freelance experience and elevate your professional growth. Join us in shaping a future where excellence knows no limits.</p>
+
+         </div>
+         <button  class="btn btn-outline-primary ui-btn " data-bs-toggle="collapse"
+         data-bs-target="#demo1"><span>Read More</span></button>
+
+
+
+</div>
+
   </section><!-- End About Us Section -->
 
 
@@ -221,9 +286,9 @@
       <div class="row">
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-book"></i></div>
+            <div class="icon"><i class="fa fa-book"></i></div><br>
             <h4><a href="">Accounting & Bookkeeping</a></h4>
-            <p> Our expert bookkeepers are committed to maintaining accurate and up-to-date financial records for your business. We understand </p>
+            <p> Our expert bookkeepers are committed to maintaining accurate and up-to-date financial records for your business. </p>
            <a href="./courses detail/accounting.html"> <button class="button mt-4">
             Book Now
             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
@@ -235,7 +300,7 @@
 
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-code"></i></div>
+            <div class="icon"><i class="fa fa-code"></i></div><br>
             <h4><a href="">Web Development</a></h4>
             <p>Creat and maintain websites and web applications to meet specific business needs and enhance online
               presence.</p>
@@ -250,7 +315,7 @@
 
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-paint-brush"></i></div>
+            <div class="icon"><i class="fa fa-paint-brush"></i></div><br>
             <h4><a href="">Graphic Design</a></h4>
             <p>Craft impactful visuals for effective brand communication and engagement.</p>
             <a href="./courses detail/graphic.html"> <button class="button mt-4">
@@ -268,7 +333,7 @@
       <div class="row mt-4 d-flex justify-content-between">
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-amazon"></i></div>
+            <div class="icon"><i class="fa fa-amazon"></i></div><br>
             <h4><a href="">E-Commerce</a></h4>
             <p>Facilitate online buying and selling, providing platforms, payment processing, and logistics solutions
               for businesses and consumers.</p>
@@ -283,7 +348,7 @@
 
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-linode"></i></div>
+            <div class="icon"><i class="fa fa-linode"></i></div><br>
             <h4><a href="">UI/UX</a></h4>
             <p>Enhancing user experiences and interface designs to create user-friendly and visually appealing digital
               products.</p>
@@ -298,7 +363,7 @@
 
         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box flex-grow-1">
-            <div class="icon"><i class="fa fa-search"></i></div>
+            <div class="icon"><i class="fa fa-search"></i></div><br>
             <h4><a href="">Digital Markteing</a></h4>
             <p>Drive online visibility and business growth through strategies like SEO, PPC, and social media.</p>
             <a href="./courses detail/digital markiting.html"> <button class="button mt-4">
@@ -326,117 +391,59 @@
         <p>"Explore our vibrant freelancing world through captivating visuals in our photo gallery. See the talent, creativity, and diversity that define our freelance community."</p>
       </div>
 
-      <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">14 August</li>
-          <li data-filter=".filter-card">Sports Week</li>
-          <li data-filter=".filter-web">Parents Day</li>
-        </ul> -->
+     
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="./img/aqib.jpeg" class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>14 August</h4>
-            <p>A14 August</p>
-            <a href="./img/aqib.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-              title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+          <div class="portfolio-img"><img src="./img/gallery/5.jpeg" class="img-fluid" alt=""></div>
+     
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="./img/sana.jpeg" class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Parents Day </h4>
-            <p>Parents Day</p>
-            <a href="./img/sana.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-              title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+          <div class="portfolio-img">
+
+            
+            <img src="./img/gallery/6.jpeg" class="img-fluid" alt="">
+          </div>
+  
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="./img/masood.png" class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>14 August</h4>
-            <p>14 August</p>
-            <a href="./img/masood.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-              title="App 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+          <div class="portfolio-img"><img src="./img/gallery/3.jpeg" class="img-fluid" alt=""></div>
+       
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="./img/tariq mehmood.jpeg" class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Sports Week</h4>
-            <p>Sports Week</p>
-            <a href="./img/tariq mehmood.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-              title="Card 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+          <div class="portfolio-img"><img src="./img/gallery/7.jpeg" class="img-fluid" alt=""></div>
+       
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="./img/services/WhatsApp Image 2023-09-27 at 10.06.19 PM.jpeg"
+          <div class="portfolio-img"><img src="./img/gallery/5.jpeg"
               class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Parents Day</h4>
-            <p>Parents Day</p>
-            <a href="./img/services/WhatsApp Image 2023-09-27 at 10.06.19 PM.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+        
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-img"><img src="./img/services/WhatsApp Image 2023-09-27 at 10.06.17 PM.jpeg"
+          <div class="portfolio-img"><img src="./img/gallery/8.jpeg"
               class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>14 August</h4>
-            <p>14 August</p>
-            <a href="./img/services/WhatsApp Image 2023-09-27 at 10.06.17 PM.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+         
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="./img/services/WhatsApp Image 2023-09-27 at 10.06.17 PM (1).jpeg"
+          <div class="portfolio-img"><img src="./img/gallery/4.jpeg"
               class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Sports Week</h4>
-            <p>Sports Week</p>
-            <a href="./img/services/WhatsApp Image 2023-09-27 at 10.06.17 PM (1).jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+         
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-img"><img src="./img/services/WhatsApp Image 2023-09-27 at 10.06.16 PM.jpeg"
+          <div class="portfolio-img"><img src="./img/gallery/2.jpeg"
               class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Sports Week</h4>
-            <p>Sports Week</p>
-            <a href="./img/services/WhatsApp Image 2023-09-27 at 10.06.16 PM.jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+        
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-img"><img src="./img/services/WhatsApp Image 2023-09-27 at 10.06.16 PM (1).jpeg"
-              class="img-fluid" alt=""></div>
-          <!-- <div class="portfolio-info">
-            <h4>Parents Day</h4>
-            <p>Parents Day</p>
-            <a href="./img/services/WhatsApp Image 2023-09-27 at 10.06.16 PM (1).jpeg" data-gallery="portfolioGallery"
-              class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div> -->
+       
         </div>
 
       </div>
@@ -458,8 +465,8 @@
 
         <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img/tariq azam.png" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="pic"><img src="./img/tariq azam.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-2 ">
               <h4>Tariq Azam</h4>
               <span>Chief Executive Officer</span>
               <p>CEO t.Tech (Pvt) Ltd.</p>
@@ -475,7 +482,7 @@
 
         <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img/tariq mehmood.jpeg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="./img/tariq mehmood1.jpeg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Tariq Mehmood</h4>
               <span>E-Commerce Expert</span>
@@ -483,7 +490,7 @@
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="http://www.linkedin.com/in/tariq-mehmood-ttech"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -493,10 +500,10 @@
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="./img/naila.jpeg" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="member-info mt-3">
               <h4>Naila</h4>
               <span>Managing Diractor</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -508,11 +515,11 @@
         </div>
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Danish</h4>
-              <span>Excetive Chief Accountant</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="pic"><img src="./img/danish.png" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Danish Iqbal</h4>
+              <span> Chief Accountant</span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -525,16 +532,16 @@
 
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img/IMG_20230926_181712-removebg-preview.png" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="pic"><img src="./img/masood1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
               <h4>Masood Aslam</h4>
               <span>Web Developer</span>
-              <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+              <!-- <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p> -->
               <div class="social">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/rajamasood.rm.7"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/masood-aslam-57154620a/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://x.com/MasoodAslam66?t=o82DTOoa7jcXGY79hzDn4Q&s=08"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -543,10 +550,10 @@
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="./img/aqib2.jpeg" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="member-info mt-3">
               <h4>Aqib Shah</h4>
               <span>Accounting & Bookkeeping Expert</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -559,10 +566,10 @@
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
             <div class="pic"><img src="./img/sana.jpeg" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="member-info mt-3">
               <h4>Sana Baig</h4>
               <span>Digital Marketer</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -574,11 +581,11 @@
         </div>
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img/saba.jpeg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Saba Goher</h4>
+            <div class="pic"><img src="./img/sabagoher.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Saba Gohar</h4>
               <span>UI/UX Expert</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -590,11 +597,28 @@
         </div>
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img" class="img-fluid" alt=""></div>
-            <div class="member-info">
+            <div class="pic"><img src="./img/nasir1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
               <h4>Nasir</h4>
               <span>Graphic Designer</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+              <div class="social">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="./img/anila1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info pt-3">
+              <h4>Anila Qadir</h4>
+              <span>Video Editor</span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -607,11 +631,82 @@
 
         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="member d-flex align-items-start">
-            <div class="pic"><img src="./img" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Lati Parri</h4>
-              <span>Video Editor</span>
-              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="pic"><img src="./img/lubna.png" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Lubna Syed</h4>
+              <span>Amazon (VA) Expert
+              </span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+              <div class="social">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="./img/arbaz rahim.png" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Airbaz Rahim</h4>
+              <span>Amazon (VA) Expert
+              </span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+              <div class="social">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="./img/Ghulam akbar.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Ghulam Akber</h4>
+              <span>Graphic Designer & Video Editer
+              </span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+              <div class="social">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="./img/Shabbar Hussain.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Shabbar </h4>
+              <span>Amazon (VA) 
+              </span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+              <div class="social">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic"><img src="./img/Javeed ali.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info mt-3">
+              <h4>Javeed Ali </h4>
+              <span>Data Entry Expert
+              </span>
+              <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
               <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -661,10 +756,7 @@
               <h4>Call:</h4>
               <p>+92 3469210999 / +92 3405186701</p>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.4735694823315!2d74.3521573997695!3d35.91625727603361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e64993f0e6c903%3A0x8e22fcf3964d5fbf!2sTech%20ALPHALOGIX%20Pvt.%20Ltd.!5e1!3m2!1sen!2s!4v1695765408833!5m2!1sen!2s"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.2518512513557!2d74.34966497505575!3d35.91633497251235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e649ade4d44ca3%3A0xc87b34537846bbe9!2st%20tech!5e0!3m2!1sen!2s!4v1696064555356!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
         </div>
@@ -732,12 +824,10 @@
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle shadow-1-strong"
             width="150" height="150" />
         </div>
-        <h5 class="mb-3">Maria Smantha</h5>
-        <h6 class="text-primary mb-3">Web Developer</h6>
+        <h5 class="mb-3">Aliza Zain</h5>
+        <h6 class="text-primary mb-3">Accounting and Bookkeeping</h6>
         <p class="px-xl-3">
-          <i class="fa fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-          tenetur.
+          <i class="fa fa-quote-left pe-2"></i>Efficient accounting services, saved us time and money.
         </p>
         <ul class="list-unstyled d-flex justify-content-center mb-0">
           <li>
@@ -759,43 +849,13 @@
       </div>
       <div class="col-md-4 mb-5 mb-md-0">
         <div class="d-flex justify-content-center mb-4">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle shadow-1-strong"
-            width="150" height="150" />
-        </div>
-        <h5 class="mb-3">Lisa Cudrow</h5>
-        <h6 class="text-primary mb-3">Graphic Designer</h6>
-        <p class="px-xl-3">
-          <i class="fa fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
-        </p>
-        <ul class="list-unstyled d-flex justify-content-center mb-0">
-          <li>
-            <i class="fa fa-star fa-sm text-warning"></i>
-          </li>
-          <li>
-            <i class="fa fa-star fa-sm text-warning"></i>
-          </li>
-          <li>
-            <i class="fa fa-star fa-sm text-warning"></i>
-          </li>
-          <li>
-            <i class="fa fa-star fa-sm text-warning"></i>
-          </li>
-          <li>
-            <i class="fa fa-star fa-sm text-warning"></i>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 mb-0">
-        <div class="d-flex justify-content-center mb-4">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle shadow-1-strong"
             width="150" height="150" />
-        </div>
-        <h5 class="mb-3">Joni Smith</h5>
-        <h6 class="text-primary mb-3">Marketing Specialist</h6>
+          </div>
+          <h5 class="mb-3">Khubaib khalid</h5>
+        <h6 class="text-primary mb-3">Graphic Designing</h6>
         <p class="px-xl-3">
-          <i class="fa fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
-          dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+          <i class="fa fa-quote-left pe-2"></i>"Creative designs that capture our brand perfectly."
         </p>
         <ul class="list-unstyled d-flex justify-content-center mb-0">
           <li>
@@ -812,6 +872,34 @@
           </li>
           <li>
             <i class="fa fa-star-half-o text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Farheen </h5>
+        <h6 class="text-primary mb-3">Web Development</h6>
+        <p class="px-xl-3">
+          <i class="fa fa-quote-left pe-2"></i>Our website is amazing! They exceeded our expectations
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fa fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fa fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fa fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fa fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fa fa-star fa-sm text-warning"></i>
           </li>
         </ul>
       </div>
@@ -844,11 +932,24 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/web.html">Web Development</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/accounting.html">Accounting & bookkeeping</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/digital markiting.html">Digital Markiting</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/ui&ux.html">UI/UX</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/graphic.html">Graphic Design</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="./courses detail/e-commerce.html">E-Commerce</a></li>
             </ul>
           </div>
 
@@ -856,12 +957,12 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <p>You can reach us through  our social networks</p>
             <div class="social-links mt-3">
               <a href="https://www.facebook.com/profile.php?id=100088968624461&mibextid=ZbWKwL"><i
                   class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <!-- <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
+              <a href="https://www.linkedin.com/company/t-techpvtltd"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
               <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
           </div>
@@ -878,6 +979,12 @@
     </div>
     </div>
   </footer><!-- End Footer -->
+
+
+
+  <!-- <div id="preloader"></div> -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-arrow-up"></i></a>
+
 
 
 

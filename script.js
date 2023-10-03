@@ -202,4 +202,4 @@ closeChat.addEventListener('click', () => {
 //     let botDiv = document.createElement("div");
 //     botDiv.id = "bot";
 //     botDiv.classList.add("message");
-//     botDiv.innerHTML = `<span id="bot-response">${product}</span>`;
+//     botDiv.innerHTML = `<span id="bot-response">${product}</span>`;z

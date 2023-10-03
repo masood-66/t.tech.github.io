@@ -793,3 +793,187 @@
 }
 
 /* end here */
+
+
+
+/* book now form  starts here */
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+#form-book {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: radial-gradient(circle at 100% 107%, #000000 0%, #32415e 30%, #287c77 60%, #62c2fe 100%);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.669);
+}
+
+/* .container header {
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: 600;
+  text-align: center;
+} */
+
+.container .form {
+  margin-top: 15px;
+}
+
+.form .input-box-book {
+  width: 100%;
+  margin-top: 30px;
+}
+
+ label {
+  color: #fff;
+  font-size: 18px;
+  font-variant: small-caps;
+}
+
+.form :where(.input-box-book input) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #EE4E34;
+  border-radius: 6px;
+  padding: 9px 15px;
+  background: #fff;
+}
+
+.input-box-book input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .course-box {
+  margin-top: 30px;
+  padding-top: 5px;
+  color: rgb(130, 85, 0);
+}
+.form .course-box .label-course {
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 21px;
+  color: #f40101;
+}
+
+.textarea{
+  width: 100%;
+  height: 200px;
+  padding: 10px 20px;
+  outline: none;
+
+}
+
+
+
+
+/* .form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: #EE4E34;
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #000;
+} */
+
+/* .address :where(input, .select-box) {
+  margin-top: 30px;
+} */
+/* 
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #FCEDDA;
+} */
+
+.form button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(68, 183, 233);
+}
+
+.form button:hover {
+  background: rgb(43, 166, 218);
+}
+
+
+
+
+
+
+/* book now ends here */
